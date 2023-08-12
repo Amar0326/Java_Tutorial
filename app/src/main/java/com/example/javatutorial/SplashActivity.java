@@ -20,6 +20,7 @@ public class SplashActivity extends AppCompatActivity {
         Animation scale = AnimationUtils.loadAnimation(this, R.anim.scaleanimation);
         im.setAnimation(scale);
 
+
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
