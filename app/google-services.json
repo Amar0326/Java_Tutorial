@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "774592369208",
+    "project_id": "java-tutorial-90920",
+    "storage_bucket": "java-tutorial-90920.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:774592369208:android:eb4e6ce3b66005a1544ccd",
+        "android_client_info": {
+          "package_name": "com.example.javatutorial"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "774592369208-f8qglffljabg7h0lq67rgq7jkbtcmjku.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAZqGLPIKD3-r-8Ed8PnSlR0L7Y6zgAdv4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "774592369208-f8qglffljabg7h0lq67rgq7jkbtcmjku.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
