@@ -10,22 +10,22 @@ import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 
 public class SplashActivity extends AppCompatActivity {
-    ImageView im;
+    ImageView SplashImage;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
 
-        im=findViewById(R.id.logo);
+        SplashImage=findViewById(R.id.logo);
         Animation scale = AnimationUtils.loadAnimation(this, R.anim.scaleanimation);
-        im.setAnimation(scale);
+        SplashImage.setAnimation(scale);
 
 
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                Intent in = new Intent(SplashActivity.this , LoginActivity.class);
-                startActivity(in);
+                Intent intent = new Intent(SplashActivity.this , LoginActivity.class);
+                startActivity(intent);
                 finish();
             }
         },5000);

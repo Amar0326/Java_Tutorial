@@ -9,8 +9,8 @@
 
     <ImageView
         android:id="@+id/logo"
-        android:layout_width="250dp"
-        android:layout_height="250dp"
+        android:layout_width="@dimen/_220sdp"
+        android:layout_height="@dimen/_220sdp"
         android:src="@drawable/logo"
         android:layout_centerInParent="true"
         ></ImageView>
@@ -20,7 +20,7 @@
         android:layout_height="wrap_content"
         android:text="JAVA TUTORIAL"
         android:textColor="@color/white"
-        android:textSize="35dp"
+        android:textSize="@dimen/_35ssp"
         android:textStyle="bold"
         android:layout_below="@+id/logo"
         android:layout_centerHorizontal="true"
