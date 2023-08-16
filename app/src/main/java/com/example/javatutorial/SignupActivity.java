@@ -62,7 +62,7 @@ public class SignupActivity extends AppCompatActivity {
                             else {
 //                                uid =  task.getResult().getUser().getUid();
                                 Toast.makeText(SignupActivity.this, "SignUp Successfully", Toast.LENGTH_SHORT).show();
-                                startActivity(new Intent(SignupActivity.this,MainActivity.class));
+                                startActivity(new Intent(SignupActivity.this,CompilerActivity.class));
                             }
                         }
                     });
