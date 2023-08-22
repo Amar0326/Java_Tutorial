@@ -3,6 +3,16 @@
     <style name="Base.Theme.JavaTutorial" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+
+    </style>
+
+    <style name="btn" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:textSize">@dimen/_20ssp</item>
+        <item name="android:paddingHorizontal">30dp</item>
+        <item name="android:background">@drawable/rounded_corner</item>
+        <item name="android:layout_margin">@dimen/_20sdp</item>
+        <item name="android:layout_centerHorizontal">true</item>
     </style>
 
     <style name="Theme.JavaTutorial" parent="Base.Theme.JavaTutorial" />

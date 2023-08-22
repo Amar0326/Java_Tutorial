@@ -103,14 +103,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/inputm_no"
-            android:layout_centerHorizontal="true"
-            android:layout_marginHorizontal="@dimen/_20sdp"
-            android:layout_marginVertical="@dimen/_7sdp"
-            android:background="@drawable/rounded_corner"
-            android:paddingHorizontal="@dimen/_30sdp"
-            android:text="Signup"
-            android:textColor="@color/white"
-            android:textSize="@dimen/_20ssp"></androidx.appcompat.widget.AppCompatButton>
+            style="@style/btn"
+            android:text="Signup"></androidx.appcompat.widget.AppCompatButton>
 
         <LinearLayout
             android:id="@+id/signuplinear"
@@ -184,10 +178,10 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_5sdp"
                 android:text="Signup with google"
                 android:textSize="@dimen/_15ssp"
-                android:textStyle="bold"
-                android:layout_marginHorizontal="@dimen/_5sdp">
+                android:textStyle="bold">
             </TextView>
         </LinearLayout>
 

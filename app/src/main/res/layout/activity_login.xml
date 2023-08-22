@@ -77,16 +77,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/inputpass"
-            android:layout_centerHorizontal="true"
-            android:layout_marginStart="@dimen/_20sdp"
-            android:layout_marginTop="@dimen/_20sdp"
-            android:layout_marginEnd="@dimen/_20sdp"
-            android:layout_marginBottom="@dimen/_20sdp"
-            android:background="@drawable/rounded_corner"
-            android:paddingHorizontal="30dp"
-            android:text="Log in"
-            android:textColor="@color/white"
-            android:textSize="@dimen/_20ssp"></androidx.appcompat.widget.AppCompatButton>
+            style="@style/btn"
+            android:text="Log in"></androidx.appcompat.widget.AppCompatButton>
 
         <LinearLayout
             android:id="@+id/loginlinear"
@@ -141,16 +133,14 @@
         </LinearLayout>
 
         <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
             android:layout_below="@+id/or"
-            android:layout_centerHorizontal="true"
-            android:layout_marginHorizontal="@dimen/_25sdp"
-            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:background="@drawable/rounded_google"
-            android:gravity="center"
+            android:paddingVertical="@dimen/_7sdp"
             android:paddingHorizontal="10dp"
-            android:paddingVertical="@dimen/_7sdp">
+            android:gravity="center_vertical"
+            android:layout_centerHorizontal="true">
 
             <ImageView
                 android:layout_width="@dimen/_30sdp"
@@ -161,7 +151,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginHorizontal="5dp"
+                android:layout_marginHorizontal="@dimen/_5sdp"
                 android:text="Login with google"
                 android:textSize="@dimen/_15ssp"
                 android:textStyle="bold"></TextView>
