@@ -11,8 +11,18 @@
         <item name="android:textSize">@dimen/_20ssp</item>
         <item name="android:paddingHorizontal">30dp</item>
         <item name="android:background">@drawable/rounded_corner</item>
-        <item name="android:layout_margin">@dimen/_20sdp</item>
+        <item name="android:layout_marginHorizontal">@dimen/_20sdp</item>
+        <item name="android:layout_marginVertical">@dimen/_10sdp</item>
         <item name="android:layout_centerHorizontal">true</item>
+    </style>
+
+    <style name="AuthenticationInput">
+        <item name="android:layout_marginHorizontal">@dimen/_15sdp</item>
+        <item name="android:inputType">text</item>
+        <item name="android:layout_marginVertical">@dimen/_7sdp</item>
+        <item name="android:textSize">@dimen/_16ssp</item>
+        <item name="android:background">@drawable/rounded_textbox</item>
+        <item name="android:paddingHorizontal">@dimen/_20sdp</item>
     </style>
 
     <style name="Theme.JavaTutorial" parent="Base.Theme.JavaTutorial" />

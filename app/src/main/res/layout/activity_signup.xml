@@ -13,7 +13,6 @@
 
         <ImageView
             android:id="@+id/img"
-            android:layout_marginTop="@dimen/_20sdp"
             android:layout_width="@dimen/_230sdp"
             android:layout_height="@dimen/_175sdp"
             android:src="@drawable/signupimage"
@@ -46,56 +45,35 @@
             android:id="@+id/inputname"
             android:layout_width="match_parent"
             android:layout_height="@dimen/_37sdp"
-            android:layout_marginHorizontal="@dimen/_15sdp"
             android:layout_below="@+id/log2"
-            android:inputType="text"
-            android:layout_marginVertical="@dimen/_7sdp"
             android:hint="Username"
-            android:textSize="@dimen/_16ssp"
-            android:background="@drawable/rounded_textbox"
-            android:paddingHorizontal="@dimen/_20sdp"
+            style="@style/AuthenticationInput"
             ></EditText>
 
         <EditText
             android:id="@+id/inputemail"
             android:layout_width="match_parent"
             android:layout_height="@dimen/_37sdp"
-            android:layout_marginHorizontal="@dimen/_15sdp"
             android:layout_below="@+id/inputname"
-            android:inputType="text"
-            android:layout_marginVertical="@dimen/_7sdp"
             android:hint="Email"
-            android:textSize="@dimen/_16ssp"
-            android:background="@drawable/rounded_textbox"
-            android:paddingHorizontal="@dimen/_20sdp"
-            ></EditText>
+            style="@style/AuthenticationInput"></EditText>
 
         <EditText
             android:id="@+id/inputpass"
             android:layout_width="match_parent"
             android:layout_height="@dimen/_37sdp"
-            android:layout_marginHorizontal="@dimen/_15sdp"
-            android:layout_marginVertical="@dimen/_7sdp"
             android:layout_below="@+id/inputemail"
-            android:inputType="text"
             android:hint="Password"
-            android:textSize="@dimen/_16ssp"
-            android:background="@drawable/rounded_textbox"
-            android:paddingHorizontal="@dimen/_17sdp"
+            style="@style/AuthenticationInput"
             ></EditText>
 
         <EditText
             android:id="@+id/inputm_no"
             android:layout_width="match_parent"
             android:layout_height="@dimen/_37sdp"
-            android:layout_marginHorizontal="@dimen/_15sdp"
-            android:layout_marginVertical="@dimen/_7sdp"
             android:layout_below="@+id/inputpass"
-            android:inputType="text"
             android:hint="Mobile No."
-            android:textSize="@dimen/_16ssp"
-            android:background="@drawable/rounded_textbox"
-            android:paddingHorizontal="@dimen/_17sdp"
+            style="@style/AuthenticationInput"
             ></EditText>
 
         <androidx.appcompat.widget.AppCompatButton
