@@ -13,6 +13,7 @@
 
         <ImageView
             android:id="@+id/img"
+            android:layout_marginTop="@dimen/_10sdp"
             android:layout_width="@dimen/_230sdp"
             android:layout_height="@dimen/_175sdp"
             android:src="@drawable/signupimage"

@@ -6,7 +6,7 @@
 
     </style>
 
-    <style name="btn" parent="Theme.Material3.DayNight.NoActionBar">
+    <style name="btn">
         <item name="android:textColor">#ffffff</item>
         <item name="android:textSize">@dimen/_20ssp</item>
         <item name="android:paddingHorizontal">30dp</item>
