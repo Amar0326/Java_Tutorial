@@ -8,7 +8,6 @@ import android.os.Handler;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
-
 public class SplashActivity extends AppCompatActivity {
     ImageView SplashImage;
     @Override

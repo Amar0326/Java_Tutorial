@@ -74,6 +74,7 @@
             android:layout_below="@+id/loginbtn"
             android:orientation="horizontal"
             android:gravity="center">
+
             <TextView
                 android:id="@+id/logintext"
                 android:layout_width="wrap_content"
