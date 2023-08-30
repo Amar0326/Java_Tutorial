@@ -4,26 +4,34 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/gradient"
+    android:gravity="center"
     tools:context=".SplashActivity">
 
-    <ImageView
-        android:id="@+id/logo"
-        android:layout_width="@dimen/_220sdp"
-        android:layout_height="@dimen/_220sdp"
-        android:src="@drawable/logo"
-        android:layout_centerInParent="true"
-        ></ImageView>
+    <RelativeLayout
+        android:id="@+id/circle"
+        android:layout_width="@dimen/_300sdp"
+        android:layout_height="@dimen/_300sdp">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="JAVA TUTORIAL"
-        android:textColor="@color/white"
-        android:textSize="@dimen/_35ssp"
-        android:textStyle="bold"
-        android:layout_below="@+id/logo"
-        android:layout_centerHorizontal="true"
-        ></TextView>
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/anim"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_270sdp"
+            app:lottie_rawRes="@raw/splashanimation"
+            app:lottie_autoPlay="true"
+            >
+        </com.airbnb.lottie.LottieAnimationView>
+
+
+        <TextView
+            android:layout_below="@+id/anim"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="JAVA TUTORIAL"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_23sdp"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            ></TextView>
+    </RelativeLayout>
 
 </RelativeLayout>

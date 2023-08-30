@@ -15,9 +15,9 @@ public class SplashActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
 
-        SplashImage=findViewById(R.id.logo);
+        /*SplashImage=findViewById(R.id.logo);
         Animation scale = AnimationUtils.loadAnimation(this, R.anim.scaleanimation);
-        SplashImage.setAnimation(scale);
+        SplashImage.setAnimation(scale);*/
 
 
         new Handler().postDelayed(new Runnable() {
@@ -27,7 +27,7 @@ public class SplashActivity extends AppCompatActivity {
                 startActivity(intent);
                 finish();
             }
-        },5000);
+        },8000);
 
     }
 }
