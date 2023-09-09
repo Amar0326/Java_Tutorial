@@ -76,11 +76,12 @@ public class SignupActivity extends AppCompatActivity {
                     mFirebaseAuth.createUserWithEmailAndPassword(email,password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                         @Override
                         public void onComplete(@NonNull Task<AuthResult> task) {
-                            if(!task.isSuccessful()){
+                            if(!task.isSuccessful())
+                            {
                                 Toast.makeText(SignupActivity.this, "enter valid credentials", Toast.LENGTH_SHORT).show();
                             }
                             else {
-                                   userid =task.getResult().getUser().getUid();
+                                userid =task.getResult().getUser().getUid();
                                 firebaseFirestore.collection("User")
                                         .document(FirebaseAuth.getInstance().getUid())
                                         .set(new UserModel (phone_no,username))
