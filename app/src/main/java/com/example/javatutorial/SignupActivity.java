@@ -56,7 +56,7 @@ public class SignupActivity extends AppCompatActivity {
                 }
                 else if (!password.isEmpty() && password.length()<6)  {
 
-                    Inputpass.setError("Please Enter 6 Digit Password");
+                    Inputpass.setError("6 Digit Password");
                     Inputpass.requestFocus();
                 }
                 else if(username.isEmpty()){
