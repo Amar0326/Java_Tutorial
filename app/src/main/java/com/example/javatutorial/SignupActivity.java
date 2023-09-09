@@ -93,7 +93,7 @@ public class SignupActivity extends AppCompatActivity {
                                         }).addOnFailureListener(new OnFailureListener() {
                                             @Override
                                             public void onFailure(@NonNull Exception e) {
-                                                Toast.makeText(SignupActivity.this, "Account Created Unsuccesfully", Toast.LENGTH_SHORT).show();
+                                                Toast.makeText(SignupActivity.this, "Account Created unsuccesfully", Toast.LENGTH_SHORT).show();
                                             }
                                         });
                             }
