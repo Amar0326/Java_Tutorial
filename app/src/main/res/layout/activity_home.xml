@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity"
+    android:gravity="center"
+    android:padding="@dimen/_10sdp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_15sdp">
+
+    <TextView
+        android:id="@+id/heading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:textSize="@dimen/_30sdp"
+        android:textStyle="bold"
+        android:textColor="#008000"
+        android:gravity="center"
+         />
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="In literary theory, a text is any object that can be read, whether this object is a work of literature, a street sign, "
+        android:layout_below="@id/heading"
+        android:textSize="@dimen/_13sdp"
+        android:gravity="center"/>
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_below="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_250sdp"
+        android:src="@drawable/logo"
+        android:gravity="center" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/startBtn"
+            android:layout_below="@+id/image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_35sdp"
+            android:text="Start"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_15sdp"
+            android:gravity="center"
+            android:background="@drawable/rounded_corner"
+
+             />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_35sdp"
+            android:layout_marginVertical="@dimen/_10sdp"
+            android:paddingVertical="@dimen/_5sdp"
+            android:gravity="center"
+            android:layout_below="@id/startBtn"
+            android:text="compiler"
+            android:textSize="@dimen/_21ssp"
+            android:textColor="#008000"
+            android:textStyle="bold"
+            android:background="@drawable/rounded_google"
+
+
+            />
+
+    </RelativeLayout>
+</RelativeLayout>

@@ -9,8 +9,8 @@
 
     <LinearLayout
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginVertical="@dimen/_6sdp"
+        android:layout_height="match_parent"
+
         android:orientation="horizontal"
         android:gravity="center_vertical">
 
@@ -121,10 +121,11 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/input"
                 android:layout_centerHorizontal="true"
-                android:layout_marginHorizontal="@dimen/_40sdp"
-                android:layout_marginVertical="@dimen/_7sdp"
+                android:layout_marginHorizontal="@dimen/_30sdp"
+                android:layout_marginVertical="@dimen/_3sdp"
+                android:layout_marginTop="2dp"
                 android:background="@drawable/rounded_corner"
-                android:paddingHorizontal="30dp"
+                android:paddingHorizontal="@dimen/_30sdp"
                 android:text="Signup"
                 android:textColor="@color/white"
                 android:textSize="@dimen/_20ssp"></androidx.appcompat.widget.AppCompatButton>
@@ -161,10 +162,10 @@
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 android:gravity="center"
-                android:layout_marginHorizontal="20dp">
+                android:layout_marginHorizontal="@dimen/_20sdp">
                 <View
                     android:layout_width="@dimen/_100sdp"
-                    android:layout_height="2dp"
+                    android:layout_height="@dimen/_2sdp"
                     android:background="@color/black">
                 </View>
                 <TextView
@@ -173,11 +174,11 @@
                     android:text="or"
                     android:textStyle="bold"
                     android:textSize="@dimen/_17ssp"
-                    android:layout_marginHorizontal="15dp">
+                    android:layout_marginHorizontal="@dimen/_15sdp">
                 </TextView>
                 <View
                     android:layout_width="@dimen/_100sdp"
-                    android:layout_height="2dp"
+                    android:layout_height="@dimen/_2sdp"
                     android:background="@color/black">
                 </View>
 
@@ -188,7 +189,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@drawable/rounded_google"
-                android:paddingVertical="7dp"
+                android:paddingVertical="@dimen/_4sdp"
                 android:paddingHorizontal="10dp"
                 android:gravity="center_vertical"
                 android:layout_centerHorizontal="true">
@@ -198,14 +199,14 @@
                     android:layout_height="@dimen/_25sdp"
                     android:src="@drawable/google"
                     android:layout_marginHorizontal="6dp"></ImageView>
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="5dp"
                     android:text="Signup with google"
                     android:textSize="@dimen/_12ssp"
-                    android:textStyle="bold"
-                    android:layout_marginHorizontal="5dp">
-                </TextView>
+                    android:textStyle="bold"></TextView>
             </LinearLayout>
         </RelativeLayout>
 

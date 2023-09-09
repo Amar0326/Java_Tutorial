@@ -9,17 +9,10 @@ import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 public class SplashActivity extends AppCompatActivity {
-    ImageView SplashImage;
-    @Override
+      @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
-
-        /*SplashImage=findViewById(R.id.logo);
-        Animation scale = AnimationUtils.loadAnimation(this, R.anim.scaleanimation);
-        SplashImage.setAnimation(scale);*/
-
-
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {

@@ -19,12 +19,60 @@ import com.google.firebase.auth.FirebaseAuth;
 public class LoginActivity extends AppCompatActivity {
 
 TextView Naviagtesignup;
+EditText Inputemail,Inputpass;
+FirebaseAuth mFirebaseAuth;
+AppCompatButton LoginBtn;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
-
+        mFirebaseAuth = FirebaseAuth.getInstance();
         Naviagtesignup=findViewById(R.id.naviagtesignup);
+        Inputemail=findViewById(R.id.inputemail);
+        Inputpass=findViewById(R.id.inputpass);
+        LoginBtn=findViewById(R.id.loginbtn);
+
+        LoginBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String email = Inputemail.getText().toString().trim();
+                String password = Inputpass.getText().toString();
+
+                if (email.isEmpty() && password.isEmpty()) {
+                    Toast.makeText(LoginActivity.this, "Fields Are Empty", Toast.LENGTH_SHORT).show();
+                }
+                else if(email.isEmpty()){
+                    Inputemail.setError("Please Enter Email Address");
+                    Inputemail.requestFocus();
+                }
+                else if (password.isEmpty()) {
+                    Inputpass.setError("Please Enter Password");
+                    Inputpass.requestFocus();
+                }
+                else if (!(email.isEmpty() && password.isEmpty())) {
+                    mFirebaseAuth.signInWithEmailAndPassword(email,password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+                        @Override
+                        public void onComplete(@NonNull Task<AuthResult> task) {
+                            if(!task.isSuccessful()){
+                                Toast.makeText(LoginActivity.this, "enter valid credentials", Toast.LENGTH_SHORT).show();
+                            }
+                            else {
+                                startActivity(new Intent(LoginActivity.this,HomeActivity.class));
+
+                            }
+
+                        }
+                    });
+
+                 }
+                 else {
+                     Toast.makeText(LoginActivity.this, "Something Went Wrong", Toast.LENGTH_SHORT).show();
+                 }
+
+            }
+        });
+
+
         Naviagtesignup.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

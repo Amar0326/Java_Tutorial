@@ -48,6 +48,7 @@
             android:layout_height="@dimen/_37sdp"
             android:layout_below="@+id/log2"
             android:hint="Username"
+            android:inputType="text"
             style="@style/AuthenticationInput"
             ></EditText>
 
@@ -57,6 +58,7 @@
             android:layout_height="@dimen/_37sdp"
             android:layout_below="@+id/inputname"
             android:hint="Email"
+            android:inputType="textEmailAddress"
             style="@style/AuthenticationInput"></EditText>
 
         <EditText
@@ -65,6 +67,7 @@
             android:layout_height="@dimen/_37sdp"
             android:layout_below="@+id/inputemail"
             android:hint="Password"
+            android:inputType="textPassword"
             style="@style/AuthenticationInput"
             ></EditText>
 
@@ -74,6 +77,7 @@
             android:layout_height="@dimen/_37sdp"
             android:layout_below="@+id/inputpass"
             android:hint="Mobile No."
+            android:inputType="phone"
             style="@style/AuthenticationInput"
             ></EditText>
 
