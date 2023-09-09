@@ -48,7 +48,7 @@
             android:layout_width="match_parent"
             android:layout_height="@dimen/_40sdp"
             android:layout_below="@+id/log2"
-            android:hint="Username"
+            android:hint="Email"
             style="@style/AuthenticationInput"></EditText>
 
         <EditText

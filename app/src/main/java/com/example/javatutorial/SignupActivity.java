@@ -12,21 +12,26 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.firestore.FirebaseFirestore;
 
 public class SignupActivity extends AppCompatActivity {
  TextView Naviagtelogin;
     TextView Naviagtesignup;
     EditText Inputemail,Inputpass,Inputname,Inputm_no;
     FirebaseAuth mFirebaseAuth;
+    FirebaseFirestore firebaseFirestore;
     AppCompatButton SignupBtn;
+    public String userid;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_signup);
         mFirebaseAuth = FirebaseAuth.getInstance();
+        firebaseFirestore=FirebaseFirestore.getInstance();
         Naviagtelogin=findViewById(R.id.naviagtelogin);
         Inputemail=findViewById(R.id.inputemail);
         Inputpass=findViewById(R.id.inputpass);
@@ -75,13 +80,26 @@ public class SignupActivity extends AppCompatActivity {
                                 Toast.makeText(SignupActivity.this, "enter valid credentials", Toast.LENGTH_SHORT).show();
                             }
                             else {
-                                startActivity(new Intent(SignupActivity.this,HomeActivity.class));
-
+                                   userid =task.getResult().getUser().getUid();
+                                firebaseFirestore.collection("User")
+                                        .document(FirebaseAuth.getInstance().getUid())
+                                        .set(new UserModel (phone_no,username))
+                                        .addOnCompleteListener(new OnCompleteListener<Void>() {
+                                            @Override
+                                            public void onComplete(@NonNull Task<Void> task) {
+                                                Toast.makeText(SignupActivity.this, "Account Created Succesfully", Toast.LENGTH_SHORT).show();
+                                                startActivity(new Intent(SignupActivity.this,HomeActivity.class));
+                                            }
+                                        }).addOnFailureListener(new OnFailureListener() {
+                                            @Override
+                                            public void onFailure(@NonNull Exception e) {
+                                                Toast.makeText(SignupActivity.this, "Account Created Unsuccesfully", Toast.LENGTH_SHORT).show();
+                                            }
+                                        });
                             }
 
                         }
                     });
-
                 }
                 else {
                     Toast.makeText(SignupActivity.this, "Something Went Wrong", Toast.LENGTH_SHORT).show();
@@ -89,8 +107,6 @@ public class SignupActivity extends AppCompatActivity {
 
             }
         });
-
-
 
         Naviagtelogin.setOnClickListener(new View.OnClickListener() {
             @Override
