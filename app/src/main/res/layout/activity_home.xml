@@ -50,11 +50,10 @@
             android:textColor="@color/white"
             android:textSize="@dimen/_15sdp"
             android:gravity="center"
-            android:background="@drawable/rounded_corner"
-
-             />
+            android:background="@drawable/rounded_corner"/>
 
         <TextView
+            android:id="@+id/cbtn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="@dimen/_35sdp"
@@ -66,10 +65,7 @@
             android:textSize="@dimen/_21ssp"
             android:textColor="#008000"
             android:textStyle="bold"
-            android:background="@drawable/rounded_google"
-
-
-            />
+            android:background="@drawable/rounded_google"/>
 
     </RelativeLayout>
 </RelativeLayout>

@@ -47,7 +47,7 @@
                 android:layout_marginEnd="@dimen/_15sdp"
                 android:layout_marginVertical="@dimen/_5sdp"
                 android:background="@drawable/rounded_textbox"
-                android:hint="Username"
+                android:hint="Email"
                 android:inputType="text"
                 android:textSize="@dimen/_16ssp"
                 android:paddingHorizontal="@dimen/_13sdp"></EditText>
