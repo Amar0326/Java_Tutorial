@@ -84,7 +84,7 @@ public class SignupActivity extends AppCompatActivity {
                                 userid =task.getResult().getUser().getUid();
                                 firebaseFirestore.collection("User")
                                         .document(FirebaseAuth.getInstance().getUid())
-                                        .set(new UserModel (phone_no,username))
+                                        .set(new UserModel (phone_no,username,email))
                                         .addOnCompleteListener(new OnCompleteListener<Void>() {
                                             @Override
                                             public void onComplete(@NonNull Task<Void> task) {
