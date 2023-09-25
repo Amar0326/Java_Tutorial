@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.AppCompatButton;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
@@ -19,6 +20,7 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.firestore.FirebaseFirestore;
 
 public class SignupActivity extends AppCompatActivity {
+    public static final String SHARED_PERFS = "sharedPrefs";
  TextView Naviagtelogin;
     TextView Naviagtesignup;
     EditText Inputemail,Inputpass,Inputname,Inputm_no;
@@ -30,6 +32,7 @@ public class SignupActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_signup);
+        checkState();
         mFirebaseAuth = FirebaseAuth.getInstance();
         firebaseFirestore=FirebaseFirestore.getInstance();
         Naviagtelogin=findViewById(R.id.naviagtelogin);
@@ -90,6 +93,10 @@ public class SignupActivity extends AppCompatActivity {
                                             public void onComplete(@NonNull Task<Void> task) {
                                                 Toast.makeText(SignupActivity.this, "Account Created Succesfully", Toast.LENGTH_SHORT).show();
                                                 startActivity(new Intent(SignupActivity.this,HomeActivity.class));
+                                                SharedPreferences sharedPreferences = getSharedPreferences(SHARED_PERFS,MODE_PRIVATE);
+                                                SharedPreferences.Editor editor = sharedPreferences.edit();
+                                                editor.putString("name","true");
+                                                editor.apply();
                                             }
                                         }).addOnFailureListener(new OnFailureListener() {
                                             @Override
@@ -118,5 +125,14 @@ public class SignupActivity extends AppCompatActivity {
             }
         });
 
+    }
+
+    private void checkState() {
+        SharedPreferences sharedPreferences = getSharedPreferences(SHARED_PERFS,MODE_PRIVATE);
+        String check = sharedPreferences.getString("name","");
+        if (check.equals("true")){
+            startActivity(new Intent(SignupActivity.this,HomeActivity.class));
+            finish();
+        }
     }
 }

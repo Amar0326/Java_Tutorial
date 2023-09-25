@@ -66,6 +66,16 @@
             android:textColor="#008000"
             android:textStyle="bold"
             android:background="@drawable/rounded_google"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Logout"
+            android:id="@+id/logoutbtn"
+            android:layout_below="@id/cbtn"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="@dimen/_30sdp"/>
+
 
     </RelativeLayout>
 </RelativeLayout>
