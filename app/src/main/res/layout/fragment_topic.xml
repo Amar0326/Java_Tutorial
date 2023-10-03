@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TopicListActivity"
+    android:background="#ECECEC">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/header"
+        android:background="#F8F8F8">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Topic List"
+            android:textSize="@dimen/_30ssp"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:background="@color/white"
+            android:layout_marginVertical="@dimen/_7sdp"
+            android:layout_marginHorizontal="@dimen/_10sdp"/>
+    </androidx.cardview.widget.CardView>
+
+    <EditText
+        android:id="@+id/search"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_32sdp"
+        android:layout_below="@+id/header"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:background="@drawable/search_box"
+        android:hint="Search topic"
+        android:backgroundTint="#F8F8F8"
+        android:paddingHorizontal="@dimen/_12sdp"
+        android:textSize="@dimen/_13ssp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/topicrecycleview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/search"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginEnd="@dimen/_5sdp"
+        android:layout_marginBottom="@dimen/_5sdp"
+        android:background="#ECECEC">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+</RelativeLayout>
