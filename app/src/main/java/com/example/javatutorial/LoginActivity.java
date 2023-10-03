@@ -60,7 +60,7 @@ AppCompatButton LoginBtn;
                                 Toast.makeText(LoginActivity.this, "enter valid credentials", Toast.LENGTH_SHORT).show();
                             }
                             else {
-                                startActivity(new Intent(LoginActivity.this,HomeActivity.class));
+                                startActivity(new Intent(LoginActivity.this,BaseActivity.class));
                                 SharedPreferences sharedPreferences = getSharedPreferences(SHARED_PERFS,MODE_PRIVATE);
                                 SharedPreferences.Editor editor = sharedPreferences.edit();
                                 editor.putString("name","true");
@@ -95,7 +95,7 @@ AppCompatButton LoginBtn;
         SharedPreferences sharedPreferences = getSharedPreferences(SHARED_PERFS,MODE_PRIVATE);
         String check = sharedPreferences.getString("name","");
         if (check.equals("true")){
-            startActivity(new Intent(LoginActivity.this,HomeActivity.class));
+            startActivity(new Intent(LoginActivity.this,BaseActivity.class));
             finish();
         }
     }

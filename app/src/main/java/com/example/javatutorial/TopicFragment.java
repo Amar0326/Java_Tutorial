@@ -54,7 +54,8 @@ public class TopicFragment extends Fragment implements TopicListner{
         arr.add(new TopicModel("bchjbdhc","ncjdbjc"));
         arr.add(new TopicModel("ncjdbc","ncidcjdbcjhd"));
         arr.add(new TopicModel("cjbdhcbhd","ncjhdbhc"));
-        arr.add(new TopicModel("bchdbchdc","njsbchhvcd"));
+
+
         Log.i("array","all data enter");
     }
 

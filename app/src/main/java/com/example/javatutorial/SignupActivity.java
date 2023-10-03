@@ -92,7 +92,7 @@ public class SignupActivity extends AppCompatActivity {
                                             @Override
                                             public void onComplete(@NonNull Task<Void> task) {
                                                 Toast.makeText(SignupActivity.this, "Account Created Succesfully", Toast.LENGTH_SHORT).show();
-                                                startActivity(new Intent(SignupActivity.this,HomeActivity.class));
+                                                startActivity(new Intent(SignupActivity.this,BaseActivity.class));
                                                 SharedPreferences sharedPreferences = getSharedPreferences(SHARED_PERFS,MODE_PRIVATE);
                                                 SharedPreferences.Editor editor = sharedPreferences.edit();
                                                 editor.putString("name","true");
@@ -131,7 +131,7 @@ public class SignupActivity extends AppCompatActivity {
         SharedPreferences sharedPreferences = getSharedPreferences(SHARED_PERFS,MODE_PRIVATE);
         String check = sharedPreferences.getString("name","");
         if (check.equals("true")){
-            startActivity(new Intent(SignupActivity.this,HomeActivity.class));
+            startActivity(new Intent(SignupActivity.this,BaseActivity.class));
             finish();
         }
     }

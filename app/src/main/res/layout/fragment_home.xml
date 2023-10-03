@@ -45,7 +45,7 @@
     </LinearLayout>
     <ImageView
         android:layout_width="match_parent"
-        android:layout_height="@dimen/_240sdp"
+        android:layout_height="@dimen/_230sdp"
         android:src="@drawable/img"
         android:id="@+id/homeimg"
         android:layout_below="@+id/text"
