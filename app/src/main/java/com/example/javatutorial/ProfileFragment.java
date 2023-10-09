@@ -36,9 +36,12 @@ public class ProfileFragment extends Fragment {
                 editor.putString("name","");
                 editor.apply();
                 startActivity(new Intent(getActivity(),LoginActivity.class));
+                getActivity().finish();
+
 
             }
         });
+
 
 
         return view;

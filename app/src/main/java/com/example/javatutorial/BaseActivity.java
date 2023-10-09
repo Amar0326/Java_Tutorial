@@ -19,6 +19,7 @@ public class BaseActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_base);
 
+
         bn=findViewById(R.id.bottomnavigation);
 
         bn.setOnItemSelectedListener(new NavigationBarView.OnItemSelectedListener() {

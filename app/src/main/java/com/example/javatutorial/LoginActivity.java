@@ -61,6 +61,7 @@ AppCompatButton LoginBtn;
                             }
                             else {
                                 startActivity(new Intent(LoginActivity.this,BaseActivity.class));
+                                finish();
                                 SharedPreferences sharedPreferences = getSharedPreferences(SHARED_PERFS,MODE_PRIVATE);
                                 SharedPreferences.Editor editor = sharedPreferences.edit();
                                 editor.putString("name","true");
