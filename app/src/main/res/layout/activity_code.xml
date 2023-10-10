@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CodeActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="sbcsc"
+        android:textSize="@dimen/_40ssp"
+        android:id="@+id/topicname"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/topicname"
+        android:text="dc"
+        android:textSize="@dimen/_20sdp"
+        android:id="@+id/topicdes"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/topicdes"
+        android:text="dc"
+        android:textSize="@dimen/_20sdp"
+        android:id="@+id/topiccode"/>
+
+</RelativeLayout>
