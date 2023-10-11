@@ -21,7 +21,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="dvjvif jffnvjfbv jvbjfbv jbvjbv nvjfbv vjfbvb jbjc jbcjbdc"
+        android:text="Welcome to java tutorial , to Learn Java programming step by step"
         android:textSize="@dimen/_20ssp"
         android:layout_below="@+id/heading"
         android:layout_marginVertical="@dimen/_7sdp"
