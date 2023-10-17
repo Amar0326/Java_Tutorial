@@ -14,7 +14,19 @@
         android:layout_centerHorizontal="true"
 
         android:text="email" />
-
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/email"
+        android:layout_margin="@dimen/_10sdp"
+        android:text="phine"
+        android:id="@+id/phone"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/phone"
+        android:text="username"
+        android:id="@+id/user"/>
 
     <Button
     android:layout_width="wrap_content"
