@@ -82,6 +82,7 @@ public class ProfileFragment extends Fragment {
                     public void onFailure(@NonNull Exception e) {
                         // Handle errors
                         Log.e("FirestoreData", "Error fetching user data: " + e.getMessage());
+
                     }
                 });
 
