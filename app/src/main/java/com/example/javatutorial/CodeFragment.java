@@ -48,7 +48,7 @@ public class CodeFragment extends Fragment implements CodeLister {
     }
 
     void setdata(){
-        arr.add(new CodeModel("Array","Code","Output"));
+        arr.add(new CodeModel("yash","yash","yash"));
         arr.add(new CodeModel("Array","Code","Output"));
         arr.add(new CodeModel("Array","Code","Output"));
         arr.add(new CodeModel("Array","Code","Output"));
