@@ -4,15 +4,57 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ProfileFragment">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/topcol"
+    android:background="#008000">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/top"
+        android:padding="@dimen/_10sdp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Profile"
+            android:textStyle="bold"
+            android:textSize="@dimen/_20sdp"
+            android:layout_weight="1"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Edit"
+            android:textStyle="bold"
+            android:textSize="@dimen/_20sdp"/>
+
+    </LinearLayout>
+    <ImageView
+        android:layout_width="@dimen/_150sdp"
+        android:layout_height="@dimen/_150sdp"
+        android:src="@drawable/logo"
+        android:layout_below="@+id/top"
+        android:id="@+id/img"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/img"
+        android:text="username"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/user"/>
+
+</RelativeLayout>
 
 
     <TextView
         android:id="@+id/email"
+        android:layout_below="@+id/topcol"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginVertical="@dimen/_200sdp"
+        android:layout_marginVertical="@dimen/_20sdp"
         android:layout_centerHorizontal="true"
-
         android:text="email" />
     <TextView
         android:layout_width="wrap_content"
@@ -21,20 +63,13 @@
         android:layout_margin="@dimen/_10sdp"
         android:text="phine"
         android:id="@+id/phone"/>
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/phone"
-        android:text="username"
-        android:id="@+id/user"/>
+
 
     <Button
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
+        android:layout_below="@+id/phone"
     android:text="Logout"
-
-    android:layout_centerHorizontal="true"
-    android:layout_centerVertical="true"
     android:id="@+id/logbtn"/>
 
 
