@@ -46,19 +46,20 @@ public class RecycleTopicAdapter extends RecyclerView.Adapter<RecycleTopicAdapte
     }
 
     @Override
-    public void onBindViewHolder(@NonNull ViewHolder holder, @SuppressLint("RecyclerView") int position) {
-        String name=array.get(position).getName();
+    public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
+        String name = array.get(position).getName();
         holder.topicname.setText(name);
-        holder.topicindex.setText(Integer.toString(count));
-        count++;
+        holder.topicindex.setText(String.valueOf(position + 1)); // Use position directly
         holder.topicdes.setText(array.get(position).description);
-        holder.relativeLayout.setOnClickListener(new View.OnClickListener(){
+
+        holder.relativeLayout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 listner.onItemClick(array.get(position));
             }
         });
     }
+
 
     @Override
     public int getItemCount() {

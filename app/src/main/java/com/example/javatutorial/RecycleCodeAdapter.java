@@ -17,14 +17,16 @@ public class RecycleCodeAdapter extends RecyclerView.Adapter<RecycleCodeAdapter.
 
     private ArrayList<CodeModel> array;
     private Context context;
-    private CodeLister listner;
-    int count=1;
+    private CodeLister listener;
+    private int count;
 
-    public RecycleCodeAdapter(@NonNull Context context, @NonNull ArrayList<CodeModel> arr, CodeLister listner){
-        this.context=context;
-        this.array=arr;
-        this.listner=listner;
+    public RecycleCodeAdapter(@NonNull Context context, @NonNull ArrayList<CodeModel> arr, CodeLister listener){
+        this.context = context;
+        this.array = arr;
+        this.listener = listener;
+        this.count = 1; // Initialize count to 1 here
     }
+
     @NonNull
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
@@ -34,35 +36,38 @@ public class RecycleCodeAdapter extends RecyclerView.Adapter<RecycleCodeAdapter.
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, @SuppressLint("RecyclerView") int position) {
-        String name=array.get(position).getName();
+        String name = array.get(position).getName();
         holder.topicname.setText(name);
-        holder.topicindex.setText(Integer.toString(count));
-        count++;
+        holder.topicindex.setText(Integer.toString(position + 1)); // Use position directly
         holder.topicdes.setText(array.get(position).description);
-        holder.relativeLayout.setOnClickListener(new View.OnClickListener(){
+
+        holder.relativeLayout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                listner.onItemClick(array.get(position));
+                listener.onItemClick(array.get(position));
             }
         });
     }
+
 
     @Override
     public int getItemCount() {
         return array.size();
     }
 
-    public class ViewHolder extends RecyclerView.ViewHolder{
+    public class ViewHolder extends RecyclerView.ViewHolder {
         private TextView topicname;
         private TextView topicindex;
         private TextView topicdes;
         private CardView relativeLayout;
+
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
-            topicname  = itemView.findViewById(R.id.topicname);
-            topicindex= itemView.findViewById(R.id.topicindex);
+            topicname = itemView.findViewById(R.id.topicname);
+            topicindex = itemView.findViewById(R.id.topicindex);
             topicdes = itemView.findViewById(R.id.topicdes);
             relativeLayout = itemView.findViewById(R.id.topiccard);
         }
     }
 }
+
