@@ -18,7 +18,7 @@ public class CodeActivity extends AppCompatActivity {
 
         TextView txtname = findViewById(R.id.topicname);
         TextView txtdes = findViewById(R.id.topicdes);
-        TextView txtdcode = findViewById(R.id.topicdes);
+        TextView txtdcode = findViewById(R.id.topiccode);
 
         txtname.setText(name);
         txtdes.setText(description);

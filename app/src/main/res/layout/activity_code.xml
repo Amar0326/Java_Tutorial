@@ -1,15 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".CodeActivity">
-
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/_5sdp">
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="sbcsc"
+        android:textStyle="bold"
         android:textSize="@dimen/_40ssp"
         android:id="@+id/topicname"/>
 
@@ -18,7 +22,8 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/topicname"
         android:text="dc"
-        android:textSize="@dimen/_20sdp"
+        android:textSize="@dimen/_15ssp"
+        android:padding="@dimen/_8sdp"
         android:id="@+id/topicdes"/>
 
     <TextView
@@ -28,5 +33,5 @@
         android:text="dc"
         android:textSize="@dimen/_20sdp"
         android:id="@+id/topiccode"/>
-
 </RelativeLayout>
+</ScrollView>
