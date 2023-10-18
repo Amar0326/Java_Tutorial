@@ -29,7 +29,8 @@ import com.google.firebase.firestore.QuerySnapshot;
 
 import org.checkerframework.checker.nullness.qual.NonNull;
 
-public class ProfileFragment extends Fragment {
+public class
+ProfileFragment extends Fragment {
     public static final String SHARED_PERFS = "sharedPrefs";
     TextView Logout_Btn,Email,User,Phone;
     FirebaseAuth mAuth;
