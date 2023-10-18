@@ -3,12 +3,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".ProfileFragment">
 <RelativeLayout
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:id="@+id/topcol"
-    android:background="#008000">
+    android:padding="@dimen/_5sdp"
+    android:background="@drawable/roundedprofile">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -18,6 +20,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Profile"
+            android:textColor="@color/white"
             android:textStyle="bold"
             android:textSize="@dimen/_20sdp"
             android:layout_weight="1"/>
@@ -26,12 +29,13 @@
             android:layout_height="wrap_content"
             android:text="Edit"
             android:textStyle="bold"
+            android:textColor="@color/white"
             android:textSize="@dimen/_20sdp"/>
 
     </LinearLayout>
     <ImageView
-        android:layout_width="@dimen/_150sdp"
-        android:layout_height="@dimen/_150sdp"
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="@dimen/_100sdp"
         android:src="@drawable/logo"
         android:layout_below="@+id/top"
         android:id="@+id/img"
@@ -41,25 +45,59 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/img"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_30sdp"
+        android:textStyle="bold"
         android:text="username"
+        android:layout_marginBottom="@dimen/_7sdp"
         android:layout_centerHorizontal="true"
         android:id="@+id/user"/>
 
 </RelativeLayout>
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/emaillayout"
+        android:layout_below="@+id/topcol"
+        android:gravity="center_vertical"
+        android:background="@drawable/profile_linearlayout"
+        android:layout_marginHorizontal="@dimen/_12sdp"
+        android:layout_marginVertical="@dimen/_8sdp"
+        >
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardElevation="@dimen/_15sdp"
+            app:cardCornerRadius="@dimen/_12sdp"
+            android:layout_margin="@dimen/_10sdp"
+            >
+            <ImageView
+                android:layout_width="@dimen/_35sdp"
+                android:layout_height="@dimen/_35sdp"
+                android:src="@drawable/baseline_email_24"
+                android:textSize="@dimen/_25ssp"
+                android:layout_margin="@dimen/_3sdp"></ImageView>
+        </androidx.cardview.widget.CardView>
+        <TextView
+            android:id="@+id/email"
+            android:layout_below="@+id/topcol"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="@dimen/_20sdp"
+            android:layout_centerHorizontal="true"
+            android:text="email"
+            android:textSize="@dimen/_20ssp"
+            android:layout_weight="1"
+            />
+    </LinearLayout>
+
+
 
     <TextView
-        android:id="@+id/email"
-        android:layout_below="@+id/topcol"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginVertical="@dimen/_20sdp"
-        android:layout_centerHorizontal="true"
-        android:text="email" />
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/email"
+        android:layout_below="@id/emaillayout"
         android:layout_margin="@dimen/_10sdp"
         android:text="phine"
         android:id="@+id/phone"/>
