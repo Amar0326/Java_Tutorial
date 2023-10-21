@@ -31,7 +31,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/topicdes"
         android:text="dc"
-        android:textSize="@dimen/_20sdp"
+        android:textSize="@dimen/_16sdp"
         android:id="@+id/topiccode"/>
 </RelativeLayout>
 </ScrollView>
