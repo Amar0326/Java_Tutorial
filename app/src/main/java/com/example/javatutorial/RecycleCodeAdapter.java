@@ -20,6 +20,13 @@ public class RecycleCodeAdapter extends RecyclerView.Adapter<RecycleCodeAdapter.
     private CodeLister listener;
     private int count;
 
+    public void setFilterList(@NonNull Context context, @NonNull ArrayList<CodeModel> arr, CodeLister listner){
+        this.context=context;
+        this.array=arr;
+        this.listener= listner;
+        notifyDataSetChanged();
+    }
+
     public RecycleCodeAdapter(@NonNull Context context, @NonNull ArrayList<CodeModel> arr, CodeLister listener){
         this.context = context;
         this.array = arr;

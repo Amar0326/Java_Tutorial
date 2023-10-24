@@ -14,6 +14,8 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.SearchView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 
@@ -21,6 +23,8 @@ public class CodeFragment extends Fragment implements CodeLister {
     ArrayList<CodeModel> arr;
     RecyclerView recyclerView;
     Activity context;
+    RecycleCodeAdapter adapter;
+    SearchView searchView;
     public CodeFragment() {
         // Required empty public constructor
     }
@@ -39,9 +43,24 @@ public class CodeFragment extends Fragment implements CodeLister {
         super.onViewCreated(view, savedInstanceState);
         arr=new ArrayList<>();
         recyclerView = context.findViewById(R.id.coderecycleview);
+
+        searchView = context.findViewById(R.id.search);
+        searchView.clearFocus();
+        searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
+            @Override
+            public boolean onQueryTextSubmit(String s) {
+                return false;
+            }
+
+            @Override
+            public boolean onQueryTextChange(String s) {
+                filterlist(s);
+                return true;
+            }
+        });
         setdata();
         //setAdapter();
-        RecycleCodeAdapter adapter = new RecycleCodeAdapter(getContext(), arr,this);
+        adapter = new RecycleCodeAdapter(getContext(), arr,this);
         recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
         recyclerView.setAdapter(adapter);
 
@@ -1352,5 +1371,21 @@ public class CodeFragment extends Fragment implements CodeLister {
         intent.putExtra("code",tm.output);
         //Toast.makeText(this,tm.name,Toast.LENGTH_SHORT).show();
         startActivity(intent);
+    }
+
+    public void filterlist(String s){
+        ArrayList<CodeModel> flist = new ArrayList<>();
+        for(CodeModel item : arr){
+            if(item.getName().toLowerCase().contains(s.toLowerCase())){
+                flist.add(item);
+            }
+        }
+
+        if(flist.isEmpty()){
+            Toast.makeText(context,"no data found",Toast.LENGTH_SHORT).show();
+        }
+        else {
+            adapter.setFilterList(getContext(), flist,this);
+        }
     }
 }

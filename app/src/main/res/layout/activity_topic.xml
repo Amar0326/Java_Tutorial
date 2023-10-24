@@ -22,7 +22,7 @@
         android:padding="@dimen/_7sdp"
         android:layout_below="@+id/topicname"
         android:text="dc"
-        android:textSize="@dimen/_20sdp"
+        android:textSize="@dimen/_16sdp"
         android:id="@+id/topicdes"/>
 
     </RelativeLayout>

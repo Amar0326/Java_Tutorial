@@ -10,6 +10,7 @@
     android:layout_height="wrap_content"
     android:id="@+id/topcol"
     android:padding="@dimen/_5sdp"
+    android:backgroundTint="#008000"
     android:background="@drawable/roundedprofile">
     <LinearLayout
         android:layout_width="match_parent"
@@ -34,9 +35,9 @@
 
     </LinearLayout>
     <ImageView
-        android:layout_width="@dimen/_100sdp"
-        android:layout_height="@dimen/_100sdp"
-        android:src="@drawable/logo"
+        android:layout_width="@dimen/_150sdp"
+        android:layout_height="@dimen/_120sdp"
+        android:src="@drawable/profile"
         android:layout_below="@+id/top"
         android:id="@+id/img"
         android:layout_centerHorizontal="true"/>
@@ -49,9 +50,18 @@
         android:textSize="@dimen/_30sdp"
         android:textStyle="bold"
         android:text="username"
-        android:layout_marginBottom="@dimen/_7sdp"
         android:layout_centerHorizontal="true"
         android:id="@+id/user"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/user"
+        android:layout_centerHorizontal="true"
+        android:text="ID"
+        android:id="@+id/userid"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_12ssp"
+        android:layout_marginBottom="@dimen/_5sdp"/>
 
 </RelativeLayout>
 
@@ -62,8 +72,8 @@
         android:layout_below="@+id/topcol"
         android:gravity="center_vertical"
         android:background="@drawable/profile_linearlayout"
-        android:layout_marginHorizontal="@dimen/_12sdp"
-        android:layout_marginVertical="@dimen/_8sdp"
+        android:layout_marginHorizontal="@dimen/_18sdp"
+        android:layout_marginVertical="@dimen/_10sdp"
         >
         <androidx.cardview.widget.CardView
             android:layout_width="wrap_content"
@@ -92,23 +102,88 @@
             />
     </LinearLayout>
 
-
-
-    <TextView
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/emaillayout"
-        android:layout_margin="@dimen/_10sdp"
-        android:text="phine"
-        android:id="@+id/phone"/>
+        android:id="@+id/phonelayout"
+        android:layout_below="@+id/emaillayout"
+        android:gravity="center_vertical"
+        android:background="@drawable/profile_linearlayout"
+        android:layout_marginHorizontal="@dimen/_18sdp"
+        android:layout_marginVertical="@dimen/_10sdp"
+        >
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardElevation="@dimen/_15sdp"
+            app:cardCornerRadius="@dimen/_12sdp"
+            android:layout_margin="@dimen/_10sdp"
+            >
+            <ImageView
+                android:layout_width="@dimen/_35sdp"
+                android:layout_height="@dimen/_35sdp"
+                android:src="@drawable/baseline_local_phone_24"
+                android:textSize="@dimen/_25ssp"
+                android:layout_margin="@dimen/_3sdp"></ImageView>
+        </androidx.cardview.widget.CardView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/emaillayout"
+            android:textSize="@dimen/_20ssp"
+            android:layout_centerHorizontal="true"
+            android:text="phine"
+            android:id="@+id/phone"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/loginlayout"
+        android:layout_below="@+id/phonelayout"
+        android:gravity="center_vertical"
+        android:background="@drawable/profile_linearlayout"
+        android:layout_marginHorizontal="@dimen/_18sdp"
+        android:layout_marginVertical="@dimen/_10sdp"
+        >
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardElevation="@dimen/_15sdp"
+            app:cardCornerRadius="@dimen/_12sdp"
+            android:layout_margin="@dimen/_10sdp"
+            >
+            <ImageView
+                android:layout_width="@dimen/_35sdp"
+                android:layout_height="@dimen/_35sdp"
+                android:src="@drawable/baseline_login_24"
+                android:textSize="@dimen/_25ssp"
+                android:layout_margin="@dimen/_3sdp"></ImageView>
+        </androidx.cardview.widget.CardView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/phonelayout"
+            android:text="Logout"
+            android:textSize="@dimen/_20ssp"
+            android:id="@+id/logbtn"/>
+    </LinearLayout>
 
 
-    <Button
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-        android:layout_below="@+id/phone"
-    android:text="Logout"
-    android:id="@+id/logbtn"/>
+<!--    <TextView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:layout_marginStart="@dimen/_10sdp"-->
+<!--        android:layout_marginTop="@dimen/_10sdp"-->
+<!--        android:layout_marginEnd="@dimen/_10sdp"-->
+<!--        android:layout_marginBottom="@dimen/_10sdp"-->
+<!--        android:text="*2023 Java Tuatorials"-->
+<!--        android:textSize="@dimen/_13ssp" />-->
+
+
+
 
 
 

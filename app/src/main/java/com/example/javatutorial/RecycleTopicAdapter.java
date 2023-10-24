@@ -19,6 +19,13 @@ public class RecycleTopicAdapter extends RecyclerView.Adapter<RecycleTopicAdapte
     private Context context;
     private TopicListner listner;
     int count=1;
+
+    public void setFilterList(@NonNull Context context, @NonNull ArrayList<TopicModel> arr, TopicListner listner){
+        this.context=context;
+        this.array=arr;
+        this.listner=listner;
+        notifyDataSetChanged();
+    }
     public RecycleTopicAdapter(@NonNull Context context, @NonNull ArrayList<TopicModel> arr, TopicListner listner){
         this.context=context;
         this.array=arr;
@@ -46,7 +53,7 @@ public class RecycleTopicAdapter extends RecyclerView.Adapter<RecycleTopicAdapte
     }
 
     @Override
-    public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
+    public void onBindViewHolder(@NonNull ViewHolder holder, @SuppressLint("RecyclerView") int position) {
         String name = array.get(position).getName();
         holder.topicname.setText(name);
         holder.topicindex.setText(String.valueOf(position + 1)); // Use position directly
