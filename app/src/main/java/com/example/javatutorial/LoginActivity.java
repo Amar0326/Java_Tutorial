@@ -66,10 +66,7 @@ AppCompatButton LoginBtn;
                                 SharedPreferences.Editor editor = sharedPreferences.edit();
                                 editor.putString("name","true");
                                 editor.apply();
-
-
                             }
-
                         }
                     });
 
