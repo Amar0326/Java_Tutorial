@@ -12,6 +12,7 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -47,7 +48,7 @@ ProfileFragment extends Fragment {
         Email = view.findViewById(R.id.email);
         Phone = view.findViewById(R.id.phone);
         User = view.findViewById(R.id.user);
-        Id=view.findViewById(R.id.userid);
+//        Id=view.findViewById(R.id.userid);
         mAuth = FirebaseAuth.getInstance();
         String Uid =  mAuth.getCurrentUser().getUid();
 
@@ -66,7 +67,7 @@ ProfileFragment extends Fragment {
                     Email.setText(email);
                     User.setText(username);
                     Phone.setText(phone);
-                    Id.setText("ID:"+Uid);
+//                    Id.setText("ID:"+Uid);
                     // Do something with the user data
 //                    Log.d("FirestoreData", "Username: " + username);
 //                    Log.d("FirestoreData", "Email: " + email);
@@ -85,8 +86,8 @@ ProfileFragment extends Fragment {
                 });
 
 
+        LinearLayout Logout_Btn = view.findViewById(R.id.loginlayout);
 
-        Logout_Btn = view.findViewById(R.id.logbtn);
         Logout_Btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

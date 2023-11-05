@@ -4,12 +4,11 @@ public class CodeModel {
     String name;
     String description;
 
-    String output;
 
-    public CodeModel(String name, String description, String output) {
+    public CodeModel(String name, String description) {
         this.name = name;
         this.description = description;
-        this.output = output;
+
     }
 
     public String getName() {
@@ -28,11 +27,5 @@ public class CodeModel {
         this.description = description;
     }
 
-    public String getOutput() {
-        return output;
-    }
 
-    public void setOutput(String output) {
-        this.output = output;
-    }
 }

@@ -26,12 +26,12 @@
         android:padding="@dimen/_8sdp"
         android:id="@+id/topicdes"/>
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/topicdes"
-        android:text="dc"
-        android:textSize="@dimen/_16sdp"
-        android:id="@+id/topiccode"/>
+<!--    <TextView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@+id/topicdes"-->
+<!--        android:text="dc"-->
+<!--        android:textSize="@dimen/_16sdp"-->
+<!--        android:id="@+id/topiccode"/>-->
 </RelativeLayout>
 </ScrollView>

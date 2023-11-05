@@ -31,6 +31,7 @@ TextView Cbtn,StartBtn,Logoutbtn;
                 startActivity(new Intent(HomeActivity.this,CompilerActivity.class));
             }
         });
+
         Logoutbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
