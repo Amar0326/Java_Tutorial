@@ -14,6 +14,7 @@ import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
+import com.google.android.material.progressindicator.LinearProgressIndicator;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 
@@ -21,6 +22,7 @@ public class LoginActivity extends AppCompatActivity {
     public static final String SHARED_PERFS = "sharedPrefs";
 TextView Naviagtesignup;
 EditText Inputemail,Inputpass;
+    LinearProgressIndicator progressIndicator;
 FirebaseAuth mFirebaseAuth;
 AppCompatButton LoginBtn;
     @Override
@@ -34,12 +36,16 @@ AppCompatButton LoginBtn;
         Inputpass=findViewById(R.id.inputpass);
         LoginBtn=findViewById(R.id.loginbtn);
 
+        progressIndicator = findViewById(R.id.progress_bar);
+        changeInProgress(false);
+
+
 
         LoginBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 String email = Inputemail.getText().toString().trim();
-                String password = Inputpass.getText().toString();
+                String password = Inputpass.getText().toString().trim();
 
                 if (email.isEmpty() && password.isEmpty()) {
                     Toast.makeText(LoginActivity.this, "Fields Are Empty", Toast.LENGTH_SHORT).show();
@@ -57,9 +63,14 @@ AppCompatButton LoginBtn;
                         @Override
                         public void onComplete(@NonNull Task<AuthResult> task) {
                             if(!task.isSuccessful()){
+                                changeInProgress(true);
                                 Toast.makeText(LoginActivity.this, "enter valid credentials", Toast.LENGTH_SHORT).show();
+                                changeInProgress(false);
+
                             }
                             else {
+                                changeInProgress(true);
+
                                 startActivity(new Intent(LoginActivity.this,BaseActivity.class));
                                 finish();
                                 SharedPreferences sharedPreferences = getSharedPreferences(SHARED_PERFS,MODE_PRIVATE);
@@ -99,5 +110,11 @@ AppCompatButton LoginBtn;
             startActivity(new Intent(LoginActivity.this,BaseActivity.class));
             finish();
         }
+    }
+    void changeInProgress(boolean show) {
+        if (show)
+            progressIndicator.setVisibility(View.VISIBLE);
+        else
+            progressIndicator.setVisibility(View.INVISIBLE);
     }
 }

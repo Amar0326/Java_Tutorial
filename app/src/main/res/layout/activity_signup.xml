@@ -10,6 +10,12 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
+        <com.google.android.material.progressindicator.LinearProgressIndicator
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:indeterminate="true"
+            android:layout_marginTop="@dimen/_180sdp"
+            android:id="@+id/progress_bar"/>
 
         <ImageView
             android:id="@+id/img"
