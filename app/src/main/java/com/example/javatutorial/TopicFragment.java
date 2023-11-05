@@ -1615,7 +1615,6 @@ public class TopicFragment extends Fragment implements TopicListner{
                 "\n" ));
 
 
-
         Log.i("array","all data enter");
 
     }
