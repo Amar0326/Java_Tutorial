@@ -12,6 +12,7 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -91,8 +92,8 @@ ProfileFragment extends Fragment {
                 });
 
 
+        LinearLayout Logout_Btn = view.findViewById(R.id.loginlayout);
 
-        Logout_Btn = view.findViewById(R.id.logbtn);
         Logout_Btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

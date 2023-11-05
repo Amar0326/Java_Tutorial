@@ -15,6 +15,7 @@ import android.widget.Toast;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.Task;
+import com.google.android.material.progressindicator.LinearProgressIndicator;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.firestore.FirebaseFirestore;
@@ -25,6 +26,7 @@ public class SignupActivity extends AppCompatActivity {
     TextView Naviagtesignup;
     EditText Inputemail,Inputpass,Inputname,Inputm_no;
     FirebaseAuth mFirebaseAuth;
+    LinearProgressIndicator progressIndicator;
     FirebaseFirestore firebaseFirestore;
     AppCompatButton SignupBtn;
     public String userid;
@@ -41,12 +43,14 @@ public class SignupActivity extends AppCompatActivity {
         SignupBtn=findViewById(R.id.signupbtn);
         Inputm_no=findViewById(R.id.inputm_no);
         Inputname=findViewById(R.id.inputname);
+        progressIndicator = findViewById(R.id.progress_bar);
+        changeInProgress(false);
 
         SignupBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 String email = Inputemail.getText().toString().trim();
-                String password = Inputpass.getText().toString();
+                String password = Inputpass.getText().toString().trim();
                 String username= Inputname.getText().toString();
                 String phone_no = Inputm_no.getText().toString();
 
@@ -91,6 +95,7 @@ public class SignupActivity extends AppCompatActivity {
                                         .addOnCompleteListener(new OnCompleteListener<Void>() {
                                             @Override
                                             public void onComplete(@NonNull Task<Void> task) {
+                                                changeInProgress(true);
                                                 Toast.makeText(SignupActivity.this, "Account Created Succesfully", Toast.LENGTH_SHORT).show();
                                                 startActivity(new Intent(SignupActivity.this,BaseActivity.class));
                                                 finish();
@@ -102,6 +107,7 @@ public class SignupActivity extends AppCompatActivity {
                                         }).addOnFailureListener(new OnFailureListener() {
                                             @Override
                                             public void onFailure(@NonNull Exception e) {
+                                                changeInProgress(false);
                                                 Toast.makeText(SignupActivity.this, "Account Created unsuccesfully", Toast.LENGTH_SHORT).show();
                                             }
                                         });
@@ -127,7 +133,12 @@ public class SignupActivity extends AppCompatActivity {
         });
 
     }
-
+    void changeInProgress(boolean show) {
+        if (show)
+            progressIndicator.setVisibility(View.VISIBLE);
+        else
+            progressIndicator.setVisibility(View.INVISIBLE);
+    }
     private void checkState() {
         SharedPreferences sharedPreferences = getSharedPreferences(SHARED_PERFS,MODE_PRIVATE);
         String check = sharedPreferences.getString("name","");
