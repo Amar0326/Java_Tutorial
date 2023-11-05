@@ -51,14 +51,10 @@ ProfileFragment extends Fragment {
         mAuth = FirebaseAuth.getInstance();
         String Uid =  mAuth.getCurrentUser().getUid();
 
-
-        FirebaseApp.initializeApp(requireContext()); // Initialize Firebase
-        FirebaseFirestore db = FirebaseFirestore.getInstance(); // Initialize Firestore
-
+        FirebaseApp.initializeApp(requireContext());
+        FirebaseFirestore db = FirebaseFirestore.getInstance();
         CollectionReference citiesRef = db.collection("User");
-        // Replace with your collection name
         DocumentReference df=citiesRef.document(Uid);
-
         df.get().addOnSuccessListener(new OnSuccessListener<DocumentSnapshot>() {
             @Override
             public void onSuccess(DocumentSnapshot documentSnapshot) {
@@ -75,7 +71,6 @@ ProfileFragment extends Fragment {
 //                    Log.d("FirestoreData", "Username: " + username);
 //                    Log.d("FirestoreData", "Email: " + email);
                 } else {
-                    // User document doesn't exist
                     Log.d("FirestoreData", "User document doesn't exist");
                 }
             }
@@ -85,7 +80,6 @@ ProfileFragment extends Fragment {
                     public void onFailure(@NonNull Exception e) {
                         // Handle errors
                         Log.e("FirestoreData", "Error fetching user data: " + e.getMessage());
-
 
                     }
                 });
