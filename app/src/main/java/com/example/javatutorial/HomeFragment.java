@@ -5,6 +5,8 @@ import android.os.Bundle;
 
 import androidx.appcompat.widget.AppCompatButton;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -25,6 +27,17 @@ public class HomeFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_home, container, false);
         AppCompatButton Sbutton,Cbutton;
         Sbutton = view.findViewById(R.id.startbtn);
+
+        Sbutton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                FragmentManager fm = getActivity().getSupportFragmentManager();
+                FragmentTransaction ft = fm.beginTransaction();
+                ft.replace(R.id.container, new TopicFragment());
+                ft.commit();
+            }
+        });
+
         Cbutton = view.findViewById(R.id.compiler);
         Cbutton.setOnClickListener(new View.OnClickListener() {
 
