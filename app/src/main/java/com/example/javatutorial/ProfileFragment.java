@@ -47,7 +47,7 @@ ProfileFragment extends Fragment {
         Email = view.findViewById(R.id.email);
         Phone = view.findViewById(R.id.phone);
         User = view.findViewById(R.id.user);
-        Id=view.findViewById(R.id.userid);
+//        Id=view.findViewById(R.id.userid);
         mAuth = FirebaseAuth.getInstance();
         String Uid =  mAuth.getCurrentUser().getUid();
 
@@ -70,7 +70,7 @@ ProfileFragment extends Fragment {
                     Email.setText(email);
                     User.setText(username);
                     Phone.setText(phone);
-                    Id.setText("ID:"+Uid);
+//                    Id.setText("ID:"+Uid);
                     // Do something with the user data
 //                    Log.d("FirestoreData", "Username: " + username);
 //                    Log.d("FirestoreData", "Email: " + email);

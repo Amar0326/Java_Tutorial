@@ -1613,8 +1613,6 @@ public class TopicFragment extends Fragment implements TopicListner{
                 "\t}\n" +
                 "}\n" +
                 "\n" ));
-        arr.add(new TopicModel("dd","dds"));
-        arr.add(new TopicModel("dd","dds"));
 
 
 

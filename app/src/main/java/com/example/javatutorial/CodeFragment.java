@@ -1359,10 +1359,9 @@ public class CodeFragment extends Fragment implements CodeLister {
                 "obj.convert();\n" +
                 "}\n" +
                 "}","Output"));
-        arr.add(new CodeModel("ArrayArray","Code","Output"));
+
         Log.i("array","all data enter");
     }
-
     @Override
     public void onItemClick(CodeModel tm) {
         Intent intent = new Intent(context,CodeActivity.class);

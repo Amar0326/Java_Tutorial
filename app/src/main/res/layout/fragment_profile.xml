@@ -52,16 +52,16 @@
         android:text="username"
         android:layout_centerHorizontal="true"
         android:id="@+id/user"/>
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/user"
-        android:layout_centerHorizontal="true"
-        android:text="ID"
-        android:id="@+id/userid"
-        android:textColor="@color/white"
-        android:textSize="@dimen/_12ssp"
-        android:layout_marginBottom="@dimen/_5sdp"/>
+<!--    <TextView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@id/user"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:text="ID"-->
+<!--        android:id="@+id/userid"-->
+<!--        android:textColor="@color/white"-->
+<!--        android:textSize="@dimen/_12ssp"-->
+<!--        android:layout_marginBottom="@dimen/_5sdp"/>-->
 
 </RelativeLayout>
 

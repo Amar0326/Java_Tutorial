@@ -51,7 +51,6 @@ public class RecycleTopicAdapter extends RecyclerView.Adapter<RecycleTopicAdapte
         View view = LayoutInflater.from(context).inflate(R.layout.topic_row, parent, false);
         return new ViewHolder(view);
     }
-
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, @SuppressLint("RecyclerView") int position) {
         String name = array.get(position).getName();
