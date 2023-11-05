@@ -87,7 +87,7 @@ public class CodeFragment extends Fragment implements CodeLister {
                         "System.out.println();\n" +
                         "}\n" +
                         "}\n" +
-                        "}","s"));
+                        "}"));
         arr.add(new CodeModel("Addition","import java.util.Scanner;\n" +
                 "\n" +
                 "class AddNumbers\n" +
@@ -104,7 +104,7 @@ public class CodeFragment extends Fragment implements CodeLister {
                 "z = x + y;\n" +
                 "System.out.println(\"Sum of entered integers = \"+z);\n" +
                 "}\n" +
-                "}","Output"));
+                "}"));
         arr.add(new CodeModel("Area of Circle","import java.io.BufferedReader;\n" +
                 "import java.io.IOException;\n" +
                 "import java.io.InputStreamReader;\n" +
@@ -138,7 +138,7 @@ public class CodeFragment extends Fragment implements CodeLister {
                 "* Area of a circle is\n" +
                 "* pi * r * r\n" +
                 "* where r is a radius of a circle.\n" +
-                "*/","Output"));
+                "*/"));
         arr.add(new CodeModel("Area of Rectangle","import java.io.BufferedReader;\n" +
                 "import java.io.IOException;\n" +
                 "import java.io.InputStreamReader;\n" +
@@ -185,7 +185,7 @@ public class CodeFragment extends Fragment implements CodeLister {
                 "System.out.println(\"Area of a rectangle is \" + area);\n" +
                 "}\n" +
                 "\n" +
-                "}","Output"));
+                "}"));
         arr.add(new CodeModel("Array Copy","class ArrayCopy\n" +
                 "{\n" +
                 "public static void main(String args[])\n" +
@@ -208,7 +208,7 @@ public class CodeFragment extends Fragment implements CodeLister {
                 "for(int i=0;i<10;i++)\n" +
                 "System.out.print(A2[i]+\" \");\n" +
                 "}\n" +
-                "}\n","Output"));
+                "}\n"));
         arr.add(new CodeModel("Average of array","public class ArrayAverage {\n" +
                 "\n" +
                 "public static void main(String[] args) {\n" +
@@ -227,7 +227,7 @@ public class CodeFragment extends Fragment implements CodeLister {
                 "\n" +
                 "System.out.println(\"Average value of array elements is : \" + average);\n" +
                 "}\n" +
-                "}","Output"));
+                "}"));
         arr.add(new CodeModel("Binary Search","import java.util.Scanner;\n" +
                 "\n" +
                 "class BinarySearch \n" +
@@ -271,7 +271,7 @@ public class CodeFragment extends Fragment implements CodeLister {
                 "if ( first > last )\n" +
                 "System.out.println(search + \" is not present in the list.\\n\");\n" +
                 "}\n" +
-                "}","Output"));
+                "}"));
         arr.add(new CodeModel("Binary to Decimal","import java.util.Scanner;\n" +
                 "\n" +
                 "public class Binary_Decimal {\n" +
@@ -299,7 +299,7 @@ public class CodeFragment extends Fragment implements CodeLister {
                 "obj.getVal();\n" +
                 "obj.convert();\n" +
                 "}\n" +
-                "}\n","Output"));
+                "}\n"));
         arr.add(new CodeModel("Bitwise Addition","import java.util.Scanner;\n" +
                 "public class Bitwise_Addition \n" +
                 "{\n" +
@@ -327,7 +327,7 @@ public class CodeFragment extends Fragment implements CodeLister {
                 "System.out.println(\"The Summation is: \"+add(x, y));\n" +
                 "input.close();\n" +
                 "}\n" +
-                "}","Output"));
+                "}"));
         arr.add(new CodeModel("Bubble Sort","import java.util.Random;\n" +
                 "\n" +
                 "public class Bubble_Sort{\n" +
@@ -368,7 +368,7 @@ public class CodeFragment extends Fragment implements CodeLister {
                 "System.out.println(\"\\nSorted Sequence: \");\n" +
                 "printSequence(sort(sequence));\n" +
                 "}\n" +
-                "}","Output"));
+                "}"));
         arr.add(new CodeModel("Calculate Percentage","import java.util.Scanner;\n" +
                 "\n" +
                 "public class PercentageCalculator \n" +
@@ -389,7 +389,7 @@ public class CodeFragment extends Fragment implements CodeLister {
                 "System.out.println(x + \" % of \" + y + \" is \" + result); \n" +
                 "System.out.println();\n" +
                 "}\n" +
-                "}","Output"));
+                "}"));
         arr.add(new CodeModel("Char Array to String","public class CharArrayToString {\n" +
                 "\n" +
                 "public static void main(String args[]){\n" +
@@ -404,7 +404,7 @@ public class CodeFragment extends Fragment implements CodeLister {
                 "\n" +
                 "System.out.println(\"Char array converted to String: \" + str);\n" +
                 "}\n" +
-                "}","Output"));
+                "}"));
         arr.add(new CodeModel("Constructor Example","class Programming {\n" +
                 "//constructor method\n" +
                 "Programming() {\n" +
@@ -414,7 +414,7 @@ public class CodeFragment extends Fragment implements CodeLister {
                 "public static void main(String[] args) {\n" +
                 "Programming object = new Programming(); //creating object\n" +
                 "}\n" +
-                "}","Output"));
+                "}"));
         arr.add(new CodeModel("Continue Example","public class ContinueExample {\n" +
                 "\n" +
                 "public static void main(String[] args) {\n" +
@@ -433,7 +433,7 @@ public class CodeFragment extends Fragment implements CodeLister {
                 "System.out.println(intArray[i]);\n" +
                 "}\n" +
                 "}\n" +
-                "}\n","Output"));
+                "}\n"));
         arr.add(new CodeModel("Create Directory","import java.io.*;\n" +
                 "\n" +
                 "public class CreateDirectory\n" +
@@ -449,7 +449,7 @@ public class CodeFragment extends Fragment implements CodeLister {
                 "else\n" +
                 "System.out.println(\"Directory was not created successfully\");\n" +
                 "}\n" +
-                "}","Output"));
+                "}"));
         arr.add(new CodeModel("Create File","import java.io.File;\n" +
                 "import java.io.IOException;\n" +
                 "\n" +
@@ -467,7 +467,7 @@ public class CodeFragment extends Fragment implements CodeLister {
                 "ioe.printStackTrace();\n" +
                 "}\n" +
                 "}\n" +
-                "}\n","Output"));
+                "}\n"));
         arr.add(new CodeModel("Date Time","import java.util.*;\n" +
                 "\n" +
                 "class GetCurrentDateAndTime\n" +
@@ -489,7 +489,7 @@ public class CodeFragment extends Fragment implements CodeLister {
                 "System.out.println(\"Current date is \"+day+\"/\"+(month+1)+\"/\"+year);\n" +
                 "System.out.println(\"Current time is \"+hour+\" : \"+minute+\" : \"+second);\n" +
                 "}\n" +
-                "}","Output"));
+                "}"));
         arr.add(new CodeModel("Date to String","import java.text.DateFormat;\n" +
                 "import java.text.SimpleDateFormat;\n" +
                 "import java.util.Date;\n" +
@@ -510,7 +510,7 @@ public class CodeFragment extends Fragment implements CodeLister {
                 "System.out.println(\"Date converted to String: \" + strDate);\n" +
                 "\n" +
                 "}\n" +
-                "}","Output"));
+                "}"));
         arr.add(new CodeModel("Decimal to Binary","import java.util.Scanner;\n" +
                 "\n" +
                 "public class DecimalToBinary {\n" +
@@ -536,7 +536,7 @@ public class CodeFragment extends Fragment implements CodeLister {
                 "String binary = dtb.toBinary(decimal);\n" +
                 "System.out.println(\"The binary representation is \" + binary);\n" +
                 "}\n" +
-                "}","Output"));
+                "}"));
         arr.add(new CodeModel("Decimal to Hex","import java.util.Scanner;\n" +
                 "\n" +
                 "public class Decimal_Hexa {\n" +
@@ -566,7 +566,7 @@ public class CodeFragment extends Fragment implements CodeLister {
                 "obj.getVal();\n" +
                 "obj.convert();\n" +
                 "}\n" +
-                "}","Output"));
+                "}"));
         arr.add(new CodeModel("Decimal to Octal","import java.util.Scanner;\n" +
                 "\n" +
                 "public class Decimal_Octal {\n" +
@@ -594,7 +594,7 @@ public class CodeFragment extends Fragment implements CodeLister {
                 "obj.getVal();\n" +
                 "obj.convert();\n" +
                 "}\n" +
-                "}","Output"));
+                "}"));
         arr.add(new CodeModel("Delete Directory","import java.io.*;\n" +
                 "\n" +
                 "public class DeleteFileOrDirectory {\n" +
@@ -611,7 +611,7 @@ public class CodeFragment extends Fragment implements CodeLister {
                 "Please note that delete method returns false if the file did not exists or the directory was not empty.\n" +
                 "*/\n" +
                 "}\n" +
-                "}\n","Output"));
+                "}\n"));
         arr.add(new CodeModel("Delete element from Array","public class DeleteArray {\n" +
                 "\n" +
                 "public static void main(String[] arguments) {\n" +
@@ -636,7 +636,7 @@ public class CodeFragment extends Fragment implements CodeLister {
                 "System.out.println(arg[i]);\n" +
                 "}\n" +
                 "}\n" +
-                "}","Output"));
+                "}"));
         arr.add(new CodeModel("Display IP Address","import java.net.InetAddress;\n" +
                 "\n" +
                 "class IPAddress\n" +
@@ -645,7 +645,7 @@ public class CodeFragment extends Fragment implements CodeLister {
                 "{\n" +
                 "System.out.println(InetAddress.getLocalHost());\n" +
                 "}\n" +
-                "}","Output"));
+                "}"));
         arr.add(new CodeModel("Do While Example","public class DoWhileExample {\n" +
                 "\n" +
                 "public static void main(String[] args) {\n" +
@@ -662,7 +662,7 @@ public class CodeFragment extends Fragment implements CodeLister {
                 "}while(i < 5);\n" +
                 "\n" +
                 "}\n" +
-                "}\n","Output"));
+                "}\n"));
         arr.add(new CodeModel("Even or Odd","import java.util.Scanner;\n" +
                 "\n" +
                 "class OddOrEven\n" +
@@ -679,7 +679,7 @@ public class CodeFragment extends Fragment implements CodeLister {
                 "else\n" +
                 "System.out.println(\"You entered an odd number.\");\n" +
                 "}\n" +
-                "}","Output"));
+                "}"));
         arr.add(new CodeModel("Factorial using recursion","import java.io.BufferedReader;\n" +
                 "import java.io.IOException;\n" +
                 "import java.io.InputStreamReader;\n" +
@@ -710,7 +710,7 @@ public class CodeFragment extends Fragment implements CodeLister {
                 "//else call the same function with the value - 1\n" +
                 "return b * fact(b-1);\n" +
                 "}\n" +
-                "}\n","Output"));
+                "}\n"));
         arr.add(new CodeModel("Finally Example","public class FinallyExample {\n" +
                 "public static void main(String[] argv) {\n" +
                 "new FinallyExample().doTheWork();\n" +
@@ -741,7 +741,7 @@ public class CodeFragment extends Fragment implements CodeLister {
                 "(\"Don't like type \" + type);\n" +
                 "return new Object();\n" +
                 "}\n" +
-                "}","Output"));
+                "}"));
         arr.add(new CodeModel("Find Armstrong Number","import java.util.Scanner;\n" +
                 "\n" +
                 "class ArmstrongNumber\n" +
@@ -785,7 +785,7 @@ public class CodeFragment extends Fragment implements CodeLister {
                 "\n" +
                 "return p; \n" +
                 "}\n" +
-                "}","Output"));
+                "}"));
         arr.add(new CodeModel("Find Factorial","import java.util.Scanner;\n" +
                 "\n" +
                 "class Factorial\n" +
@@ -809,7 +809,7 @@ public class CodeFragment extends Fragment implements CodeLister {
                 "System.out.println(\"Factorial of \"+n+\" is = \"+fact);\n" +
                 "}\n" +
                 "}\n" +
-                "}\n","Output"));
+                "}\n"));
         arr.add(new CodeModel("Floyd Traingle","import java.util.Scanner;\n" +
                 "\n" +
                 "class FloydTriangle\n" +
@@ -835,7 +835,7 @@ public class CodeFragment extends Fragment implements CodeLister {
                 "System.out.println();\n" +
                 "}\n" +
                 "}\n" +
-                "}","Output"));
+                "}"));
         arr.add(new CodeModel("For loop Example","class ForLoop {\n" +
                 "public static void main(String[] args) {\n" +
                 "int c;\n" +
@@ -844,7 +844,7 @@ public class CodeFragment extends Fragment implements CodeLister {
                 "System.out.println(c);\n" +
                 "}\n" +
                 "}\n" +
-                "}","Output"));
+                "}"));
         arr.add(new CodeModel("GCD & LCM","import java.util.Scanner;\n" +
                 "\n" +
                 "public class GCD_LCM {\n" +
@@ -882,7 +882,7 @@ public class CodeFragment extends Fragment implements CodeLister {
                 "System.out.println(\"The LCM of two numbers is: \" + lcm(x, y));\n" +
                 "input.close();\t\t\n" +
                 "}\n" +
-                "}","Output"));
+                "}"));
         arr.add(new CodeModel("Garbage Collection","import java.util.*;\n" +
                 "\n" +
                 "class GarbageCollection\n" +
@@ -894,14 +894,14 @@ public class CodeFragment extends Fragment implements CodeLister {
                 "rs.gc();\n" +
                 "System.out.println(\"Free memory in JVM after Garbage Collection = \"+rs.freeMemory());\n" +
                 "}\n" +
-                "}\n","Output"));
+                "}\n"));
         arr.add(new CodeModel("Hello World","class HelloWorld\n" +
                 "{\n" +
                 "public static void main(String args[])\n" +
                 "{\n" +
                 "System.out.println(\"Hello World\");\n" +
                 "}\n" +
-                "}","Output"));
+                "}"));
         arr.add(new CodeModel("Hex to Decimal","import java.util.Scanner;\n" +
                 "\n" +
                 "public class Hexa_Decimal {\n" +
@@ -929,7 +929,7 @@ public class CodeFragment extends Fragment implements CodeLister {
                 "obj.getVal();\n" +
                 "obj.convert();\n" +
                 "}\n" +
-                "}","Output"));
+                "}"));
         arr.add(new CodeModel("If Else Example","import java.util.Scanner;\n" +
                 "\n" +
                 "class IfElse {\n" +
@@ -951,7 +951,7 @@ public class CodeFragment extends Fragment implements CodeLister {
                 "System.out.println(\"Unfortunately you failed to pass the exam.\");\n" +
                 "}\n" +
                 "}\n" +
-                "}\n","Output"));
+                "}\n"));
         arr.add(new CodeModel("Insertion Sort","import java.util.Scanner;\n" +
                 "\n" +
                 "/* Class InsertionSort */\n" +
@@ -1003,7 +1003,7 @@ public class CodeFragment extends Fragment implements CodeLister {
                 "System.out.print(arr[i]+\" \"); \n" +
                 "System.out.println(); \n" +
                 "} \n" +
-                "}","Output"));
+                "}"));
         arr.add(new CodeModel("Interface Example","interface Info {\n" +
                 "static final String language = \"Java\"; \n" +
                 "public void display();\n" +
@@ -1020,7 +1020,7 @@ public class CodeFragment extends Fragment implements CodeLister {
                 "public void display() {\n" +
                 "System.out.println(language + \" is awesome\");\n" +
                 "} \n" +
-                "}","Output"));
+                "}"));
         arr.add(new CodeModel("Largest Smallest","public class LargestSmallest {\n" +
                 "\n" +
                 "public static void main(String[] args) {\n" +
@@ -1044,7 +1044,7 @@ public class CodeFragment extends Fragment implements CodeLister {
                 "System.out.println(\"Largest Number is : \" + largetst);\n" +
                 "System.out.println(\"Smallest Number is : \" + smallest);\n" +
                 "}\n" +
-                "}","Output"));
+                "}"));
         arr.add(new CodeModel("Largest of 3 no","import java.util.Scanner;\n" +
                 "\n" +
                 "class LargestOfThreeNumbers\n" +
@@ -1068,7 +1068,7 @@ public class CodeFragment extends Fragment implements CodeLister {
                 "else \n" +
                 "System.out.println(\"Entered numbers are not distinct.\");\n" +
                 "}\n" +
-                "}","Output"));
+                "}"));
         arr.add(new CodeModel("Last Modification Time","import java.io.*;\n" +
                 "import java.util.Date;\n" +
                 "\n" +
@@ -1082,7 +1082,7 @@ public class CodeFragment extends Fragment implements CodeLister {
                 "\n" +
                 "System.out.println(\"File was last modifed at : \" + new Date(lastModified));\n" +
                 "}\n" +
-                "}","Output"));
+                "}"));
         arr.add(new CodeModel("Leap Year","public class LeapYear {\n" +
                 "\n" +
                 "public static void main(String[] args) {\n" +
@@ -1097,7 +1097,7 @@ public class CodeFragment extends Fragment implements CodeLister {
                 "else\n" +
                 "System.out.println(\"Year \" + year + \" is not a leap year\");\n" +
                 "}\n" +
-                "}","Output"));
+                "}"));
         arr.add(new CodeModel("Linear Search","import java.util.Scanner;\n" +
                 "\n" +
                 "class LinearSearch \n" +
@@ -1130,7 +1130,7 @@ public class CodeFragment extends Fragment implements CodeLister {
                 "if (c == n) /* Searching element is absent */\n" +
                 "System.out.println(search + \" is not present in array.\");\n" +
                 "}\n" +
-                "}","Output"));
+                "}"));
         arr.add(new CodeModel("List Contents of Dir","import java.io.*;\n" +
                 "\n" +
                 "public class ListOfDirectory {\n" +
@@ -1146,7 +1146,7 @@ public class CodeFragment extends Fragment implements CodeLister {
                 "System.out.println(files[i]);\n" +
                 "}\n" +
                 "}\n" +
-                "}\n","Output"));
+                "}\n"));
         arr.add(new CodeModel("Matrix Multiplication","import java.util.Scanner;\n" +
                 "\n" +
                 "public class MatixMultiplication{\n" +
@@ -1198,7 +1198,7 @@ public class CodeFragment extends Fragment implements CodeLister {
                 "\n" +
                 "input.close();\n" +
                 "}\n" +
-                "}","Output"));
+                "}"));
         arr.add(new CodeModel("Matrix Transpose","import java.util.Scanner;\n" +
                 "\n" +
                 "class TransposeAMatrix\n" +
@@ -1238,7 +1238,7 @@ public class CodeFragment extends Fragment implements CodeLister {
                 "System.out.print(\"\\n\");\n" +
                 "}\n" +
                 "}\n" +
-                "}","Output"));
+                "}"));
         arr.add(new CodeModel("Merge Sort","import java.util.Scanner;\n" +
                 "\n" +
                 "/* Class MergeSort */\n" +
@@ -1305,7 +1305,7 @@ public class CodeFragment extends Fragment implements CodeLister {
                 "\n" +
                 "System.out.println(); \n" +
                 "} \n" +
-                "}","Output"));
+                "}"));
         arr.add(new CodeModel("Multiple Catch","public class Main {\n" +
                 "public static void main (String args[]) {\n" +
                 "int array[]={20,20,40};\n" +
@@ -1330,7 +1330,7 @@ public class CodeFragment extends Fragment implements CodeLister {
                 "(\"Can't be divided by Zero\"+e);\n" +
                 "}\n" +
                 "}\n" +
-                "}\n","Output"));
+                "}\n"));
         arr.add(new CodeModel("Octal to Decimal","import java.util.Scanner;\n" +
                 "\n" +
                 "public class Octal_Decimal {\n" +
@@ -1358,7 +1358,7 @@ public class CodeFragment extends Fragment implements CodeLister {
                 "obj.getVal();\n" +
                 "obj.convert();\n" +
                 "}\n" +
-                "}","Output"));
+                "}"));
 
         Log.i("array","all data enter");
     }
@@ -1367,7 +1367,7 @@ public class CodeFragment extends Fragment implements CodeLister {
         Intent intent = new Intent(context,CodeActivity.class);
         intent.putExtra("Name",tm.name);
         intent.putExtra("description",tm.description);
-        intent.putExtra("code",tm.output);
+
         //Toast.makeText(this,tm.name,Toast.LENGTH_SHORT).show();
         startActivity(intent);
     }
