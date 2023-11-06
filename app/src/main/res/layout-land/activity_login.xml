@@ -104,58 +104,9 @@
                     android:textSize="@dimen/_13ssp"></TextView>
             </LinearLayout>
 
-            <LinearLayout
-                android:layout_below="@+id/loginlinear"
-                android:id="@+id/or"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:gravity="center"
-                android:layout_marginHorizontal="20dp">
-                <View
-                    android:layout_width="@dimen/_100sdp"
-                    android:layout_height="2dp"
-                    android:background="@color/black">
-                </View>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="or"
-                    android:textSize="@dimen/_17ssp"
-                    android:layout_marginHorizontal="15dp">
-                </TextView>
-                <View
-                    android:layout_width="@dimen/_100sdp"
-                    android:layout_height="2dp"
-                    android:background="@color/black">
-                </View>
 
-            </LinearLayout>
 
-            <LinearLayout
-                android:layout_below="@+id/or"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="@drawable/rounded_google"
-                android:paddingVertical="7dp"
-                android:paddingHorizontal="10dp"
-                android:gravity="center_vertical"
-                android:layout_centerHorizontal="true">
 
-                <ImageView
-                    android:layout_width="@dimen/_20sdp"
-                    android:layout_height="@dimen/_20sdp"
-                    android:layout_marginHorizontal="@dimen/_6sdp"
-                    android:src="@drawable/google"></ImageView>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginHorizontal="5dp"
-                    android:text="Login with google"
-                    android:textSize="@dimen/_15ssp"
-                    android:textStyle="bold"></TextView>
-            </LinearLayout>
         </RelativeLayout>
 
     </LinearLayout>

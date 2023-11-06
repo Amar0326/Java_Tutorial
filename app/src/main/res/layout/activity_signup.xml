@@ -120,59 +120,6 @@
 
         </LinearLayout>
 
-        <LinearLayout
-            android:layout_below="@+id/signuplinear"
-            android:id="@+id/or"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:gravity="center"
-            android:layout_marginHorizontal="20dp">
-            <View
-                android:layout_width="@dimen/_100sdp"
-                android:layout_height="@dimen/_2sdp"
-                android:background="@color/black">
-            </View>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="or"
-                android:textStyle="bold"
-                android:textSize="@dimen/_17ssp"
-                android:layout_marginHorizontal="@dimen/_15sdp">
-            </TextView>
-            <View
-                android:layout_width="@dimen/_100sdp"
-                android:layout_height="@dimen/_2sdp"
-                android:background="@color/black">
-            </View>
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_below="@+id/or"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@drawable/rounded_google"
-            android:paddingVertical="@dimen/_7sdp"
-            android:paddingHorizontal="10dp"
-            android:gravity="center_vertical"
-            android:layout_centerHorizontal="true">
-
-            <ImageView
-                android:layout_width="@dimen/_30sdp"
-                android:layout_height="@dimen/_30sdp"
-                android:src="@drawable/google"
-                android:layout_marginHorizontal="@dimen/_6sdp"></ImageView>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginHorizontal="@dimen/_5sdp"
-                android:text="Signup with Google"
-                android:textSize="@dimen/_15ssp"
-                android:textStyle="bold">
-            </TextView>
-        </LinearLayout>
 
     </RelativeLayout>
 
